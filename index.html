@@ -14,7 +14,7 @@
 
             
         }
-        .topnav writingButtons{
+        .topnav leftButtons{
             padding-left:15px; 
             font-size: 13px;
             display: flex;
@@ -79,13 +79,46 @@
             min-width: 54px;
             text-align: center;
         }
-        
+        .text{
+            display:flex;
+            text-align: center;
+            justify-content: center;
+            color: #000;
+            opacity: 0.75;
+            font-family: arial,sans-serif;
+        }
+
+        .botnav1{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            background: #f2f2f2;
+            line-height: 40px;
+            min-width: 980px;
+            flex-direction: row;
+            color: #000;
+            opacity: 0.75;
+            font-family: arial,sans-serif;
+            text-align: center;
+            text-decoration: none;
+            align-items: center;
+        }
+        .botnav1 leftButtons{
+            padding: 27px;
+            display: inline-block;
+            height: 50%;
+        }
+        .botnav1 rightButtons{
+            padding: 27px;
+            height: 50%;  
+        }
         </style>
     </head>
     <body>
         <div class="topnav">
-            <writingButtons>À propos</writingButtons>
-            <writingButtons>Google Store</writingButtons>
+            <leftButtons>À propos</leftButtons>
+            <leftButtons>Google Store</leftButtons>
             <rightButtons style="margin-left: auto;">Gmail</rightButtons>
             <rightButtons>Images</rightButtons>
             <rightButtons>
@@ -97,6 +130,16 @@
         <div class="boxButton">
             <button class="researchButton">Recherche Google</button>
             <button class ="luckButton">J'ai de la chance</button>
+        </div>
+        <div class ="text">Google disponible en :&nbsp;
+            <a style="color:blue">English</a> </div>
+        <div class="botnav1">        
+                <leftButtons>Publicité</leftButtons>
+                <leftButtons>Entreprise</leftButtons>
+                <leftButtons>Comment fonctionne la recherche Google?</leftButtons>
+                <rightButtons style="margin-left: auto;">Confidentialité</rightButtons>
+                <rightButtons>Conditions d'utilisation</rightButtons>
+                <rightButtons>Paramètres</rightButtons>
         </div>
     </body>
 </html>
