@@ -44,9 +44,12 @@
         }
         .boxButton{
             z-index: 0;
-            display: flex;
+            display: block;
             height :70px;
             width:571;
+            padding-top: 18px;
+            margin: auto;
+            text-align: center;
         }
         .luckButton{
             background-color: #f2f2f2;
@@ -76,6 +79,7 @@
             min-width: 54px;
             text-align: center;
         }
+        
         </style>
     </head>
     <body>
@@ -87,10 +91,12 @@
             <rightButtons>
                 <img src="googleMenu.PNG" alt="dropdownMenu">
             </rightButtons>
-        </div class="boxButton">
+        </div>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo" class="logo">
+        <form><input type="text" name = "" class="searchbar"></form>
+        <div class="boxButton">
             <button class="researchButton">Recherche Google</button>
             <button class ="luckButton">J'ai de la chance</button>
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo" class="logo">
-        <form><input type="text" name = "" class="searchbar"></form>
+        </div>
     </body>
 </html>
