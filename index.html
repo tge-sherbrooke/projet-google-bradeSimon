@@ -1,7 +1,31 @@
 <html>
     <head>
         <title>bradeSimon's Google</title>
-        <style>       
+        <style>
+        .topnav{
+            display:flex;
+            flex-direction: row;
+            color: #000;
+            opacity: 0.75;
+            font-family: arial,sans-serif;
+            text-align: center;
+            text-decoration: none;
+            align-items: center;
+
+            
+        }
+        .topnav writingButtons{
+            padding-left:15px; 
+            font-size: 13px;
+            display: flex;
+            
+        }
+
+        .topnav rightButtons{
+            padding-left:15px; 
+            font-size: 13px;
+            display: flex;  
+        }    
         .logo{
             display: flex;
             margin : auto;
@@ -18,19 +42,55 @@
             height : 44px;
             width:582px;
         }
+        .boxButton{
+            z-index: 0;
+            display: flex;
+            height :70px;
+            width:571;
+        }
         .luckButton{
-
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            border-radius: 4px;
+            color: #5F6368;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
         }
         .researchButton{
-            
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            border-radius: 4px;
+            color: #5F6368;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
         }
         </style>
     </head>
     <body>
-        <button>Recherche Google</button>
-        <button>J'ai de la chance</button>
-
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo" class="logo">
+        <div class="topnav">
+            <writingButtons>À propos</writingButtons>
+            <writingButtons>Google Store</writingButtons>
+            <rightButtons style="margin-left: auto;">Gmail</rightButtons>
+            <rightButtons>Images</rightButtons>
+            <rightButtons>
+                <img src="googleMenu.PNG" alt="dropdownMenu">
+            </rightButtons>
+        </div class="boxButton">
+            <button class="researchButton">Recherche Google</button>
+            <button class ="luckButton">J'ai de la chance</button>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo" class="logo">
         <form><input type="text" name = "" class="searchbar"></form>
     </body>
 </html>
