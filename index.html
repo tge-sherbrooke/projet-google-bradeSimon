@@ -14,18 +14,10 @@
 
             
         }
-        .topnav leftButtons{
+        .topnav buttons{
             padding-left:15px; 
-            font-size: 13px;
-            display: flex;
-            
-        }
-
-        .topnav rightButtons{
-            padding-left:15px; 
-            font-size: 13px;
-            display: flex;  
-        }    
+            font-size: 13px;   
+        }  
         .logo{
             display: flex;
             margin : auto;
@@ -103,27 +95,25 @@
             text-align: center;
             text-decoration: none;
             align-items: center;
+            font-size: 14px;
+            border-top:1px solid #e4e4e4;
+            margin-left: -10px;
         }
-        .botnav1 leftButtons{
-            padding: 27px;
-            display: inline-block;
-            height: 50%;
+        .botnav1 buttons{
+            padding-left: 27px;   
         }
-        .botnav1 rightButtons{
-            padding: 27px;
-            height: 50%;  
-        }
+
         </style>
     </head>
     <body>
         <div class="topnav">
-            <leftButtons>À propos</leftButtons>
-            <leftButtons>Google Store</leftButtons>
-            <rightButtons style="margin-left: auto;">Gmail</rightButtons>
-            <rightButtons>Images</rightButtons>
-            <rightButtons>
+            <buttons>À propos</buttons>
+            <buttons>Google Store</buttons>
+            <buttons style="margin-left: auto;">Gmail</buttons>
+            <buttons>Images</buttons>
+            <buttons>
                 <img src="googleMenu.PNG" alt="dropdownMenu">
-            </rightButtons>
+            </buttons>
         </div>
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo" class="logo">
         <form><input type="text" name = "" class="searchbar"></form>
@@ -132,14 +122,15 @@
             <button class ="luckButton">J'ai de la chance</button>
         </div>
         <div class ="text">Google disponible en :&nbsp;
-            <a style="color:blue">English</a> </div>
+        <a style="color:blue">English</a> </div>
         <div class="botnav1">        
-                <leftButtons>Publicité</leftButtons>
-                <leftButtons>Entreprise</leftButtons>
-                <leftButtons>Comment fonctionne la recherche Google?</leftButtons>
-                <rightButtons style="margin-left: auto;">Confidentialité</rightButtons>
-                <rightButtons>Conditions d'utilisation</rightButtons>
-                <rightButtons>Paramètres</rightButtons>
-        </div>
+            <buttons>Publicité</buttons>
+            <buttons>Entreprise</buttons>
+            <buttons>Comment fonctionne la recherche Google?</buttons>
+            <buttons style="margin-left: auto;">Confidentialité</buttons>
+            <buttons>Conditions d'utilisation</buttons>
+            <buttons style="padding-right: 27px;">Paramètres</buttons>
+        </div> 
+
     </body>
 </html>
